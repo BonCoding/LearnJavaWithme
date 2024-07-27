@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.297 s <<< FAILURE! - in TestSuite
+testGetRequest(com.simplilearn.mavenproject.ApiTest)  Time elapsed: 0.992 s  <<< FAILURE!
+java.net.ConnectException: Connection refused: connect
+	at com.simplilearn.mavenproject.ApiTest.testGetRequest(ApiTest.java:26)
+
+testPostRequest(com.simplilearn.mavenproject.ApiTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "io.restassured.response.ValidatableResponseOptions.contentType(io.restassured.http.ContentType)" because the return value of "com.simplilearn.mavenproject.ApiTest.given()" is null
+	at com.simplilearn.mavenproject.ApiTest.testPostRequest(ApiTest.java:44)
+
