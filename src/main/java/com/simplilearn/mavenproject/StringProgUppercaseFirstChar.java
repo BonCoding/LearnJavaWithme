@@ -5,6 +5,9 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 public class StringProgUppercaseFirstChar {
 
@@ -21,6 +24,26 @@ public class StringProgUppercaseFirstChar {
 		StringProgUppercaseFirstChar convert=new StringProgUppercaseFirstChar();
 		
 		convert.converterTouppercase(inputPath, outputpath);
+		
+		
+		
+		String input= "geeks quiz practice code";
+		String[] input1=input.split(" ");
+		ArrayList<String> arrl=new ArrayList<String>(Arrays.asList(input1));
+		ArrayList<String> arr2=new ArrayList<String>();
+		System.out.println(arrl);
+//		  Collections.reverse(arrl);  
+		System.out.println(arrl);
+		System.out.println(arrl.get(3));
+		StringBuffer sb=new StringBuffer();
+		for(String abc:arrl)
+		{
+			System.out.println(abc);
+			sb.append(abc).append(" ");
+		}
+	
+		sb.reverse(); //reverses order and words both
+		System.out.println(sb.toString());
 	}
 	
 	void converterTouppercase(String inputPath,String OutPath) throws IOException

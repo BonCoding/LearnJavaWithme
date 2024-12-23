@@ -34,12 +34,13 @@ public class ArrayPractice {
 
 			
 		ArrayPractice ar=new ArrayPractice();
-		ar.singleDimentionArray(10);
-		ar.insertArr(0, 1);
+//		ar.singleDimentionArray(10);
+//		ar.insertArr(0, 1);
 //		ar.insertArr(1, 100);
 //		ar.insertArr(3, 40);
 //		ar.insertArr(1, 6);
 //		ar.insertArr(40, 0);
+		ar.twoDimenArray();
 		}
 
 	public void singleDimentionArray(int size)
@@ -70,6 +71,24 @@ public class ArrayPractice {
 			
 		}
 		}
+	
+	public void twoDimenArray(){
+		//declare
+		
+		int [][] twoDArray;
+		//intantiate
+		twoDArray=new int[2][2];
+		//initialize
+		twoDArray[0][0]=1;
+		twoDArray[0][1]=2;
+		twoDArray[1][0]=3;
+		twoDArray[1][1]=4;
+		
+		//
+		System.out.println(Arrays.deepToString(twoDArray));
+		String [][] twoDStringArray= {{"a","b"},{"c","d"}};
+		System.out.println(Arrays.deepToString(twoDStringArray));
+	}
 }
 	
 	
